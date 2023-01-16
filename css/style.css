@@ -41,6 +41,12 @@ body{
 .seafood p{
     color: #746D6D;
 }
+.food p{
+    color: #746D6D;
+}
+.drink p{
+    color: #746D6D;
+}
 .price{
     font-size: 25px;
     color:#FF7A00 ;

@@ -18,5 +18,12 @@ const card = document.querySelectorAll(".card");
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click")}
+
+  
+var element = document.querySelectorAll("card");
+  element.classList.add("shadow");
+  for (const box of element) {
+  box.classList.add('shadow');
+}
   
 

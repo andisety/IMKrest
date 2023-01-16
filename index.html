@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,87 +7,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
     <title>IMK REST demo</title>
 </head>
-
 <body>
-    <div class="bg-image " style="background-image: url('img/reest.jpg');
-     height: 100vh;
-     background-size: contain;">
+    <div class="bg-image " style="background-image: url('img/reest.jpg');height: 100vh;background-size: contain;">
         <nav class="navbar navbar-expand-lg bg-trasnparent ">
             <div class="container ">
                 <a class="navbar-brand fs-3" id="navIki" href="#">IMKrest</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse  " id="navbarNavDropdown ">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" id="navIki">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#seafood" id="navIki">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="navIki" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">Order</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" id="navIki">Contact</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#" id="navIki">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#seafood" id="navIki">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" id="navIki" data-bs-toggle="modal" data-bs-target="#order">Order</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="#contact" id="navIki">Contact</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" id="navIki">
-                                Other
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false" id="navIki">Other</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                                <li><a class="dropdown-item" href="#">Service</a></li>
-                                <li><a class="dropdown-item" href="#">Manager</a></li>
-                                <li><a class="dropdown-item" href="#">Casier</a></li>
+                                <li><a class="dropdown-item" href="#"  data-bs-target="#kitchen" data-bs-toggle="modal">Kitchen</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-target="#service" data-bs-toggle="modal">Service</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-target="#manager" data-bs-toggle="modal">Manager</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-target="#casier" data-bs-toggle="modal">Casier</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <div class="container text-center text-light">
             <br><br>
             <h1 class="mt-5 pt-5" style="font-weight: bold;">Good Food, Great Vibes</h1>
-            <h5 style="font-weight: lighter;">Let's make the world more colorful</h5>
-            <a id="mybtn" href="#seafood" type="button" style="background-color: #F9C372; width: 300px;"
-                class="btn mt-5">Order
-                Now</a>
+            <h5 class="mb-5" style="font-weight: lighter;">Let's make the world more colorful</h5>
+            <a id="mybtn" href="#seafood" type="button" style="background-color: #F9C372; width: 350px;height:50px"
+                class="btn mt-5 "><p style="font-size:20px ;">Order Now</p></a>
         </div>
     </div>
-
     <div id="seafood" class="seafood">
         <div>
             <h1 class=" text-center">Sea Foods</h1>
             <div style="margin-top: 54px;">
                 <div class="row justify-content-center">
-                    <div class="col-1 align-self-center ">
-                        <a style=" background-color: #F9C372;" class="btn"> <i class="bi bi-chevron-left"></i></a>
+                    <div class="col-1 align-self-center "><a style=" background-color: #F9C372;" class="btn"> <i class="bi bi-chevron-left"></i></a>
                     </div>
                     <div class="col-3 align-self-center p-2">
                         <div>
                             <div class="card" data-bs-toggle="modal" data-bs-target="#item" style="width: 18rem;">
                                 <img src="img/salmon.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Half Baked Salmon</h5> <p class="card-text">Description : <br> Ikan salmon panggang dengan bumbu
+                                    sederhana yang bisa dimasak..</p> <h5 class="price card-title">Rp.75.000</h5>
                                     <div class="text-center pt-1">
-                                        <button id="btnOrder" type="button"
-                                            style="width: 200px; background-color: #F9C372;" class="btn">Order
-                                            Now</button>
-                                    </div>
+                                        <button id="btnOrder" type="button"style="width: 200px; background-color: #F9C372;" class="btn">Order
+                                            Now</button></div>
                                 </div>
                             </div>
                         </div>
@@ -96,18 +66,14 @@
                     <div class="col-3 align-self-center p-2 ">
                         <div>
                             <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                                <img src="img/seafood_saus_padang.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Seafood Saus Padang</h5>
+                                    <p class="card-text">Description : <br> Seafood Saus Padang,memiliki cita rasa pedas manis dan gurih khas saus
+                                    padang...</p>
+                                    <h5 class="price card-title">Rp.95.000</h5>
                                     <div class="text-center pt-1">
-                                        <button id="btnOrder" type="button"
-                                            style="width: 200px; background-color: #F9C372;" class="btn">Order
-                                            Now</button>
-                                    </div>
+                                        <button id="btnOrder" type="button" style="width: 200px; background-color: #F9C372;" class="btn">OrderNow</button></div>
                                 </div>
                             </div>
                         </div>
@@ -115,13 +81,11 @@
                     <div class="col-3 align-self-center  p-2">
                         <div>
                             <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                                <img src="img/cumi_bakar_rujak.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Cumi Bakar Bumbu Rujak</h5>
+                                    <p class="card-text">Description : <br>Cumi besar dibersihkan dan dikerat lalu direndam dalam nanas dan garam..</p>
+                                    <h5 class="price card-title">Rp.60.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -131,17 +95,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-1 align-self-center ">
-                        <a style=" background-color: #F9C372;" class="btn"><i class="bi bi-chevron-right"></i></a>
+                    <div class="col-1 align-self-center "><a style=" background-color: #F9C372;" class="btn"><i class="bi bi-chevron-right"></i></a>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
-
-
     <div id="food" class="food">
         <div>
             <h1 class=" text-center">Foods</h1>
@@ -152,14 +111,12 @@
                     </div>
                     <div class="col-3 align-self-center p-2">
                         <div>
-                            <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                            <div class="card shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
+                                <img src="img/Korean-Fried-Chicken.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Korean Fried Chicken</h5>
+                                    <p class="card-text">Description : <br>berlapis renyah yang disiram saus gochujang pedas ala Korea...</p>
+                                    <h5 class="price card-title">Rp.88.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -171,14 +128,12 @@
                     </div>
                     <div class="col-3 align-self-center p-2 ">
                         <div>
-                            <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                            <div class="card shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
+                                <img src="img/sapi.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Iga Sapi Panggang</h5>
+                                    <p class="card-text">Description : <br>Dagingnya yang super empuk dipadukan dengan bumbu bakarnya yang manis gurih...</p>
+                                    <h5 class="price card-title">Rp.115.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -190,14 +145,12 @@
                     </div>
                     <div class="col-3 align-self-center  p-2">
                         <div>
-                            <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                            <div class="card shadow" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
+                                <img src="img/bebek.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Bebek Betutu</h5>
+                                    <p class="card-text">Description : <br> daging bebek yang empuk dan lembut dengan cara memasak khas turun temurun dari...</p>
+                                    <h5 class="price card-title">Rp.108.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -214,8 +167,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="drink">
         <div>
             <h1 class=" text-center">Drinks</h1>
@@ -227,13 +178,11 @@
                     <div class="col-3 align-self-center p-2">
                         <div>
                             <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                                <img src="img/creamy_avocado.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Creamy Avocado Smoothie</h5>
+                                    <p class="card-text">Description : <br>Jus Alpukad dingin dengan paduan dari buah alpukad ditambah dengan...</p>
+                                    <h5 class="price card-title">Rp.25.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -246,13 +195,11 @@
                     <div class="col-3 align-self-center p-2 ">
                         <div>
                             <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                                <img src="img/matcha_latte.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Matcha Latte</h5>
+                                    <p class="card-text">Description : <br>Matcha Late dengan manis yang dihasilkan dari gula dan susu kental manis, menjadikan cita rasa yang..</p>
+                                    <h5 class="price card-title">Rp.22.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -264,14 +211,12 @@
                     </div>
                     <div class="col-3 align-self-center  p-2">
                         <div>
-                            <div class="card" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
-                                <img src="img/salmon.png" class="card-img-top" alt="...">
+                            <div class="card shadow-lg" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#item">
+                                <img src="img/redvelvet.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Half Baked Salmon</h5>
-                                    <p class="card-text">Description :</p>
-                                    <p>Ikan salmon panggang dengan bumbu
-                                        sederhana yang bisa dimasak..</p>
-                                    <h5 class="price card-title">Rp.75.000</h5>
+                                    <h5 class="card-title">Red Velvet</h5>
+                                    <p class="card-text">Description : <br>Minuman yang terinspirasi cake cokelat berwarna merah yang populer di dunia, Sensasi baru seperti makan..</p>
+                                    <h5 class="price card-title">Rp.27.000</h5>
                                     <div class="text-center pt-1">
                                         <button id="btnOrder" type="button"
                                             style="width: 200px; background-color: #F9C372;" class="btn">Order
@@ -288,18 +233,23 @@
             </div>
         </div>
     </div>
+    <!-- footer-->
     <div id="contact" class="container" style="height: 130px;">
         <div class="row justify-content-center mt-5">
             <div class="col-6 "><i class="bi bi-telephone-fill me-1"></i>(021)1234568967</div>
             <div class="col-6">
                 <h5>Social Media :</h5>
+                <table>
+                    <th><tr><td><img class="me-2" src="img/instagram.png" width="50px" alt=""></td>
+                            <td><img class="me-2" src="img/facebook.png" width="50px" alt=""></td>
+                            <td><img src="img/whatsapp.png" width="50px" alt=""></td>
+                        </tr></th>
+                </table>
             </div>
         </div>
     </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!-- Modal order-->
+    <div class="modal fade" id="order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -309,8 +259,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row mb-1">
-                        <div class="col-3"><img src="img/salmon.png" width="90px" class="img-fluid rounded" alt="...">
-                        </div>
+                        <div class="col-3"><img src="img/salmon.png" width="90px" class="img-fluid rounded" alt="..."></div>
                         <div class="col-6 ">
                             <h5 class="card-title">Half Baked Salmon</h5>
                             <h5 class="card-title mb-2">Rp.100.000</h5>
@@ -322,44 +271,35 @@
                         <div class="col-3  align-self-center text-success">in proccess</div>
                     </div>
                     <div class="row mb-1">
-                        <div class="col-3"><img src="img/salmon.png" width="90px" class="img-fluid rounded" alt="...">
-                        </div>
+                        <div class="col-3"><img src="img/bebek.jpg" width="90px" class="img-fluid rounded" alt="..."></div>
                         <div class="col-6 ">
-                            <h5 class="card-title">Half Baked Salmon</h5>
-                            <h5 class="card-title mb-2">Rp.100.000</h5>
-                            <i class="bi bi-trash me-4"></i>
-                            <i class="bi bi-dash-circle me-2"></i>
-                            <input size="2" type="text" class="me-2 text-center" value="1" style="border-radius: 5px;">
-                            <i class="bi bi-plus-circle"></i>
+                            <h5 class="card-title">Bebek Betutu</h5><h5 class="card-title mb-2">Rp.108.000</h5><i class="bi bi-trash me-4"></i><i class="bi bi-dash-circle me-2"></i><input size="2" type="text" class="me-2 text-center" value="1" style="border-radius: 5px;"><i class="bi bi-plus-circle"></i>
                         </div>
                         <div class="col-3  align-self-center text-success">in proccess</div>
                     </div>
                     <div class="row mb-1">
-                        <div class="col-3"><img src="img/salmon.png" width="90px" class="img-fluid rounded" alt="...">
+                        <div class="col-3"><img src="img/redvelvet.png" width="90px" class="img-fluid rounded" alt="...">
                         </div>
                         <div class="col-6 ">
-                            <h5 class="card-title">Half Baked Salmon</h5>
-                            <h5 class="card-title mb-2">Rp.100.000</h5>
-                            <i class="bi bi-trash me-4"></i>
-                            <i class="bi bi-dash-circle me-2"></i>
-                            <input size="2" type="text" class="me-2 text-center" value="1" style="border-radius: 5px;">
-                            <i class="bi bi-plus-circle"></i>
-                        </div>
+                            <h5 class="card-title">Red  velvet</h5><h5 class="card-title mb-2">Rp.22.000</h5><i class="bi bi-trash me-4"></i><i class="bi bi-dash-circle me-2"></i><input size="2" type="text" class="me-2 text-center" value="1" style="border-radius: 5px;">
+                            <i class="bi bi-plus-circle"></i> </div>
                         <div class="col-3  align-self-center text-success">in proccess</div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <div class="text-center pt-1">
-                        <a href="#" style="width: 200px; background-color: #F9C372;" class="btn">Pay Now</a>
+                    <div class="row ">
+                        <div class="col-6 text-start"> Total <h2>Rp.100.000</h2> </div>
+                        <div class="col-6">
+                            <div class="text-center pt-1">
+                                <a href="#" style="width: 200px; background-color: #F9C372;" class="btn">Pay Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <!-- Modal -->
+    <!-- Modal item -->
     <div class="modal fade" id="item" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -370,10 +310,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="row me-3">
-
-                        <div class="col-4"><img id="img-detail" src="img/salmon.png" height="270px"
-                                class="img-fluid rounded" alt="...">
-                        </div>
+                        <div class="col-4"><img id="img-detail" src="img/salmon.png" height="270px" class="img-fluid rounded" alt="..."> </div>
                         <div class="col-6">
                             <h3>Half Baked Salmon</h3>
                             <p>Ikan salmon panggang dengan bumbu sederhana yang bisa dimasak dadakan. Disajikan dengan
@@ -387,14 +324,10 @@
                     </div>
                     <div class="row pt-5 justify-content-center ">
                         <div class="col-3 d-flex justify-content-end">
-                            <h3><i class="bi bi-dash-circle me-2"></i><input size="2" type="text"
-                                    class="me-2 text-center" value="1" style="border-radius: 5px;"><i
-                                    class="bi bi-plus-circle"></i></h3>
-
-                        </div>
+                            <h3><i class="bi bi-dash-circle me-2"></i><input size="2" type="text"class="me-2 text-center" value="1" style="border-radius: 5px;"><i class="bi bi-plus-circle"></i></h3></div>
                         <div style=" font-size:xx-large; font-weight: bold;"
                             class="col-6 d-flex justify-content-center ">
-                            <p>Rp.100.000</p>
+                            <p style="color: #FF7A00">Rp.100.000</p>
                         </div>
                         <div class="col-3 ">
                             <button id="btnOrder" type="button" style=" background-color: #F9C372;" class="btn">Order
@@ -404,16 +337,396 @@
                 </div>
             </div>
         </div>
-
-        <!-- footer-->
-
-
-
-        <!--Main Layout-->
+    </div>
+    <!-- Modal kitchen -->
+    <div class="modal fade" id="kitchen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Kitchen</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row my-0 py-0">
+                        <div class="col-4 my-0 py-0 ">
+                            <h1 class="text-center">Incoming</h1>
+                            <!--item-->
+                            <div class="card mb-1 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr>
+                                                <td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>
+                                                    Amount : 1 <br>
+                                                    <span class="badge text-dark my-0" style=" background-color: #F9C372;">Inproccess</span>
+                                                </td>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table
+                                                    <p>04</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card my-0 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr>
+                                                <td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>
+                                                    Amount : 1 <br>
+                                                    <span class="badge text-dark my-0" style=" background-color: #F9C372;">Inproccess</span>
+                                                </td>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table
+                                                    <p>04</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 my-0 py-0 ">
+                            <h1 class="text-center">Inproccess</h1>
+                            <!--item-->
+                            <div class="card my-0 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr>
+                                                <td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>
+                                                    Amount : 1 <br>
+                                                    <span class="badge text-dark my-0" style=" background-color: #F9C372;">Done</span>
+                                                </td>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table
+                                                    <p>04</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 my-0 py-0 ">
+                            <h1 class="text-center">Done</h1>
+                            <!--item-->
+                            <div class="card my-0 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr><td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>Amount : 1 <br>>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table <p>04</p>
+                                                </td> </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal service -->
+    <div class="modal fade" id="service" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Service</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row my-0 py-0">
+                        <div class="col-6 my-0 py-0 ">
+                            <h1 class="text-center">Bring to cust</h1>
+                            <!--item-->
+                            <div class="card mb-1 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr>
+                                                <td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>
+                                                    Amount : 1 <br>
+                                                    <span class="badge text-dark my-0" style=" background-color: #F9C372;">Done</span>
+                                                </td>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table
+                                                    <p>04</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card my-0 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr>
+                                                <td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>
+                                                    Amount : 1 <br>
+                                                    <span class="badge text-dark my-0" style=" background-color: #F9C372;">Done</span>
+                                                </td>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table
+                                                    <p>04</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 my-0 py-0 ">
+                            <h1 class="text-center">Done</h1>
+                            <!--item-->
+                            <div class="card my-0 py-0" style="height: 75px">
+                                <div class="card-body my-0 py-0">
+                                    <table class="table  table-borderless my-0 py-0">
+                                        <tbody >
+                                            <tr>
+                                                <td style="width:60px ;"><img src="/img//salmon.png" width="53" alt=""></td>
+                                                <td style="font-size:13px ;">Half Baked Salmon <br>Amount : 1 <br>
+                                                </td>
+                                                <td style="font-size:13px ;" class="text-center"><br> No Table <p>04</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal casier -->
+    <div class="modal fade" id="casier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Casier</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">No Table</th>
+                            <th scope="col">No Bill</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr data-bs-target="#casier-detail" data-bs-toggle="modal">
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>04</td>
+                            <td>0202201</td>
+                            <td>Paid</td>
+                          </tr>
+                        <tbody>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Susanti</td>
+                            <td>08</td>
+                            <td>0202204</td>
+                            <td>Paid</td>
+                          </tr>
+                        <tbody>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Tono</td>
+                            <td>09</td>
+                            <td>0202209</td>
+                            <td>Paid</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal casier -->
+    <div class="modal fade" id="casier-detail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Casier-Andi</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="card p-3" style="background-color:#D9D9D9 ;">
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                No Bill : 0202201
+                              </div>
+                              <div class="col-4">
+                                No Table : 04
+                              </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                Name : Andi
+                              </div>
+                              <div class="col-4">
+                                Date : 14/09/2022
+                              </div>
+                              <hr/>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                1 Half Baked Salmon
+                              </div>
+                              <div class="col-4">
+                                Rp.100.000
+                              </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                1 Half Baked Salmon
+                              </div>
+                              <div class="col-4">
+                                Rp.100.000
+                              </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                1 Half Baked Salmon
+                              </div>
+                              <div class="col-4">
+                                Rp.100.000
+                              </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                1 Half Baked Salmon
+                              </div>
+                              <div class="col-4">
+                                Rp.100.000
+                              </div>
+                              <hr/>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                SUB TOTAL
+                              </div>
+                              <div class="col-4">
+                                Rp.1.500.000
+                              </div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                TAX
+                              </div>
+                              <div class="col-4">
+                                Rp.5.000
+                              </div>
+                              <hr/>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <h3>TOTAL</h3>
+                            </div>
+                            <div class="col-4">
+                               <h3>Rp.1.650.000</h3>
+                               <a id="mybtn" href="#" type="button" style="background-color: #F9C372; width: 200px;"
+                class="btn">Paid</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Manager -->
+    <div class="modal fade" id="manager" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Stock</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Unit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Carrot</td>
+                                <td><img src="img/carrot-17586.png" width="50px" alt="carrot"></td>
+                                <td class="text-success">Available</td>
+                                <td>20</td>
+                                <td >Vegetable</td>
+                                <td>kg</td>
+                                <td><a type="button" style=" width: 100px;" class="btn btn-success m-0 p-0">Available</a></td>
+                                <td><a type="button" style="background-color: #F9C372; width: 100px;" class="btn m-0 p-0">Empty</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Potato</td>
+                                <td><img src="img/potato.png" width="50px" alt="potato"></td>
+                                <td class="text-danger">Empty</td>
+                                <td>0</td>
+                                <td >Vegetable</td>
+                                <td>kg</td>
+                                <td><a type="button" style=" width: 100px;" class="btn btn-success m-0 p-0">Available</a></td>
+                                <td><a type="button" style="background-color: #F9C372; width: 100px;" class="btn m-0 p-0">Empty</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Kol</td>
+                                <td><img src="img/kol.png" width="50px" alt="carrot"></td>
+                                <td class="text-success">Available</td>
+                                <td>20</td>
+                                <td >Vegetable</td>
+                                <td>kg</td>
+                                <td><a type="button" style=" width: 100px;" class="btn btn-success m-0 p-0">Available</a></td>
+                                <td><a type="button" style="background-color: #F9C372; width: 100px;" class="btn m-0 p-0">Empty</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>lettuce</td>
+                                <td><img src="img/selad.png" width="50px" alt="potato"></td>
+                                <td class="text-danger">Empty</td>
+                                <td>0</td>
+                                <td >Vegetable</td>
+                                <td>kg</td>
+                                <td><a type="button" style=" width: 100px;" class="btn btn-success m-0 p-0">Available</a></td>
+                                <td><a type="button" style="background-color: #F9C372; width: 100px;" class="btn m-0 p-0">Empty</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script type="js">
     </script>
 </body>
-
 </html>
